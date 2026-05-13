@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 from datetime import datetime
 
 
@@ -11,9 +11,8 @@ class TaskResponse(BaseModel):
     id: int
     title: str
     description: str
-    completed: bool
+    is_completed: bool
     created_at: datetime
 
-    class Config:
-        orm_mode = True
+    model_config = ConfigDict(from_attributes=True)
 

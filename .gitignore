@@ -1,3 +1,56 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.env
+
+# Environment variables
+.env.local
+.env.*.local
+
+# Python build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Logs
+*.log
+
+# Database
+*.sqlite3
+*.db
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Migrations cache
+*.mo
+*.pot
+
+# mypy
+.mypy_cache/
+
+# FastAPI / uvicorn
+*.pid
+
+# Temporary files
+*.swp
+*.swo
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
